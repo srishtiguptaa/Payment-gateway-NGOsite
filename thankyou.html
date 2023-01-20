@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+<body>
+    <div class="container">
+            <div class="popup" id="popup">
+                    <img src="images/tick.png">
+                    <h2>Thank you!</h2>
+                    <p>Your details has been successfully submitted.</p>
+                    <br>
+                    <br>
+                    <script src="https://cdn.pinpayments.com/pin.v2.js"></script> <a class="pin-payment-button" href="https://pay.pinpayments.com/ruy9/test"><img src="https://pinpayments.com/pay-button.png" alt="Pay Now" width="100" height="35" ></a>
+                
+            </div>
+    </div>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/hello.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup{
+    width: 400px;
+    background: rgba(95, 89, 89, 0.603);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;  
+    padding: 0, 30px, 30px,;
+    color: rgba(251, 243, 243, 0.806);
+    
+}
+.popup img{
+    width: 50px;
+    margin-top: -20px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.button{
+    width: 10px;;
+    height: 35px;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: url(images/pay-button.png);
+    border-radius: 0px;
+    cursor: pointer;
+}
+</style>
+</body>
+</html>
